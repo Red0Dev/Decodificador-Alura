@@ -124,6 +124,9 @@ h1{
 
 
 /* footer */
+footer{
+    padding-top: 2em;
+}
 .icone01{
     margin-top: 16px;
     width: 3em;
