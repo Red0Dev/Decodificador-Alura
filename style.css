@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body, .texto01{
+    background: #E5E5E5;
+}
+
+/* header */
+h1{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* main */ 
+.area01{
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+}
+.area-cript{
+    width: 80%;
+    margin: auto;
+}
+.texto01{
+    padding: 10px;
+    width: 100%;
+    height: 380px;
+    border: none;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    resize: none;
+}
+.aviso-e-botoes{
+    width: 70%;
+    margin: auto;
+}
+.importante{
+    margin: 10px 0;
+}
+.regra{
+    display: inline;
+    font-size: 12px;
+    position: absolute;
+    padding-left: 5px;
+}
+.cript, .descript{
+    width: 280px;
+    font-weight: bold;
+    padding: 20px 5em;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+}
+.cript, .descript:hover{
+    cursor: pointer;
+}
+.descript{
+    background-color: white;
+    margin-left: 10px;
+}
+.descript:active{
+    background: whitesmoke;
+}
+.cript{
+    background: darkblue;
+    color: white;
+}
+.cript:active{
+    background: rgb(2, 2, 189);
+}
+
+.area02{
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.area-descript{
+    height: 560px;
+    background: white;
+    border-radius: 2em;
+    box-sizing: border-box;
+    padding: 2em 2em;
+    margin: auto;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.not-found{
+    text-align: center;
+}
+.texto02{
+    resize: none;
+    border-radius: 2em;
+    width: 90%;
+    height: 70%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 1em 1em;
+    background-image: url(imagens/garotoLupa.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    text-decoration: none;
+}
+.botao-copiar{
+    background-color: #E5E5E5;
+    margin-top: 1em;
+    padding: 20px 40px;
+    font-size: 26px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+}
+.botao-copiar:hover{
+    cursor: pointer;
+}
+.botao-copiar:active{
+    background-color: #d0cdcd;
+}
+
+
+/* footer */
+
+footer{
+    margin-top: 3em;
+    height: 4em;
+}
+.icone01{
+    margin-top: 16px;
+    width: 3em;
+    border-radius: 5px;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+.icone02{
+    margin-top: 16px;
+    width: 3em;
+    border-radius: 5px;
+    position: absolute;
+    right: 78px;
+    bottom: 10px;
+}
+.copyright{
+    color: black;
+    font-size: 1em;
+    position: absolute;
+    right: 128px;
+    bottom: 25px;
+}
+
+@media screen and (width: 480px) and (orientation: portrait) {
+    
+}
+
+@media screend and (width: 1000px) and (orientation: landscape){
+
+}
