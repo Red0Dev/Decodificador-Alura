@@ -135,7 +135,7 @@ footer{
     border-radius: 5px;
     position: absolute;
     right: 25px;
-    bottom: 10px;
+    bottom: 1px;
 }
 .icone02{
     margin-top: 16px;
@@ -143,14 +143,14 @@ footer{
     border-radius: 5px;
     position: absolute;
     right: 78px;
-    bottom: 10px;
+    bottom: 1px;
 }
 .copyright{
     color: black;
     font-size: 1em;
     position: absolute;
     right: 128px;
-    bottom: 25px;
+    bottom: 10px;
 }
 
 @media screen and (width: 480px) and (orientation: portrait) {
