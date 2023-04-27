@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    border: 0;
 }
 body, .texto01{
     background: #E5E5E5;
@@ -58,6 +59,7 @@ h1{
 }
 .descript{
     background-color: white;
+    color: darkblue;
     margin-left: 10px;
 }
 .descript:active{
@@ -124,35 +126,15 @@ h1{
 
 
 /* footer */
-footer{
-    margin-top: 1em;
+.icones {
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
-.icone01{
-    margin-top: 16px;
-    width: 2em;
+  
+.icone01, .icone02 {
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
-    position: absolute;
-    right: 25px;
-}
-.icone02{
-    margin-top: 16px;
-    width: 2em;
-    border-radius: 5px;
-    position: absolute;
-    right: 63px;
-}
-.copyright{
-    color: black;
-    font-size: 1em;
-    position: absolute;
-    right: 113px;
-    bottom: -7px;
-}
-
-@media screen and (width: 480px) and (orientation: portrait) {
-    
-}
-
-@media screend and (width: 1000px) and (orientation: landscape){
-
+    margin-left: 5px;
 }

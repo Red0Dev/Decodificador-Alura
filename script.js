@@ -1,29 +1,29 @@
 let mensagem = document.getElementById('texto01')
 let resultado = document.getElementById('texto02')
 let naoEncontrado = document.getElementsByClassName('not-found')[0]
-let botaoCript = document.getElementsByClassName('cript')
-let botaoDescript = document.getElementsByClassName('descript')
 const regexMaiusculas = /[A-Z]/;
 const regexAcentos = /[À-ü]/;
 
 function copiarTexto() {
-    const range = document.createRange()
-    range.selectNode(resultado)
-    window.getSelection().removeAllRanges()
-    window.getSelection().addRange(range)
-    document.execCommand('copy')
-    window.getSelection().removeAllRanges()
-    resultado.style.backgroundImage = 'url(imagens/garotoLupa.svg)'
-    resultado.value = ""
+    const range = document.createRange();
+    range.selectNode(resultado);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    
+    // remove espaços em branco antes e depois do texto
+    const textoCopiado = resultado.value.trim();
+    
+    resultado.style.backgroundImage = 'url(imagens/garotoLupa.svg)';
+    resultado.value = "";
 
     // remove o botão após a cópia
-    this.remove()
+    this.remove();
 
     // restaura o valor original do naoEncontrado
     naoEncontrado.innerHTML = `<h2>Nenhuma mensagem encontrada</h2>
-    <p>Digite um texto que você deseja criptografar ou descriptografar</p>`
-
-    mensagem.focus()
+    <p>Digite um texto que você deseja criptografar ou descriptografar</p>`;
 }
 
 function criptografar() {
@@ -54,7 +54,7 @@ function criptografar() {
     }
 
     resultado.style.backgroundImage = 'none'
-    resultado.value = resultadoCriptografado
+    resultado.value = resultadoCriptografado.trim()
     naoEncontrado.textContent = ""
     mensagem.value = ""
     mensagem.focus()
@@ -70,12 +70,11 @@ function descriptografar() {
       .replace(/ufat/g, 'u');
       
     resultado.style.backgroundImage = 'none';
-    resultado.value = resultadoDescriptografado;
+    resultado.value = resultadoDescriptografado.trim();
     naoEncontrado.textContent = ""
     mensagem.value = ""
     mensagem.focus()
 }
-  
 
 function cript() {
     mensagem.focus()
