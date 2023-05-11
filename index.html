@@ -13,39 +13,36 @@
         <h1><a href="https://red0dev.github.io/Decodificador-Alura/" target="_self"><img src="imagens/Vector.svg" alt="A de Alura"></a></h1>
     </header>
 
-    <main>
-        <section class="area01">
-            <div class="area-cript">
-                <textarea name="texto01" id="texto01" placeholder="Digite seu texto" class="texto01"></textarea>
-            </div>
-        </section>
+    <main class="conteiner">
 
-        <section class="aviso-e-botoes">
-            <div class="importante">
-                <img src="imagens/VectorI.svg" alt="Simbolo de importante"> <div class="regra">Apenas letras minúsculas e sem acento</div>
-            </div>
-                <input type="button" value="Criptografar" class="cript" onclick="cript()">
-                <input type="button" value="Descriptografar" class="descript" onclick="descript()">
-        </section>
+        <section class="conteiner-cript">
+            <textarea name="texto01" id="texto01" placeholder="Digite seu texto" class="area-texto01"></textarea>
 
-        <section class="area02">
-            <div class="area-descript"> 
-                <textarea name="texto02" id="texto02" class="texto02" readonly></textarea>
-                <div class="not-found">
-                    <h2>Nenhuma mensagem encontrada</h2>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                <div class="aviso">
+                    <abbr title="Para que o decodificador funcione utilize apenas letras minúsculas e letras sem acento."><img src="imagens/VectorI.svg" alt="Simbolo de importante"></abbr> 
+                    <span>Apenas letras minúsculas e sem acento</span>
                 </div>
-            </div>
+                <div class="botoes">
+                    <input type="button" value="Criptografar" class="cript" onclick="cript()">
+                    <input type="button" value="Descriptografar" class="descript" onclick="descript()">
+                </div>
+        </section>
+
+        <section class="conteiner-descript">
+                <textarea name="texto02" id="texto02" class="area-texto02" readonly></textarea>
+                        <div class="not-found">
+                            <h2>Nenhuma mensagem encontrada</h2>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                        </div>
         </section> 
+
     </main>
 
-    <footer>
-            <div class="icones">
-                &copy; Copyright Red0Dev - 2023
+    <footer class="flex">
+                <span>&copy; Copyright Red0Dev - 2023</span>
 
                 <a href="https://github.com/red0dev" target="_blank" rel="external"><img src="imagens/github-logo-silhouette-in-a-square.png" alt="Icone github" class="icone01"></a>
                 <a href="https://www.linkedin.com/in/jonathan-gabriel-034131265/" target="_blank" rel="external"><img src="imagens/linkedin.png" alt="Icone linkedin" class="icone02"></a>
-            </div>
     </footer>
 
     <script src="script.js"></script>
